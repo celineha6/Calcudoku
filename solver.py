@@ -21,22 +21,6 @@ def main():
             puzzle[box//5][box%5] = 0                 #
             backtrack += 1                         #add 1 to backtrack
             box -= 1                               #goes back to previous box
-         
-   
-   # pzl_print = []
-   # cell = 0
-   # while cell < 25:
-   #    pzl_print.append(puzzle[cell//5][cell%5])    #print the value of the pzl at the indices 
-   #    cell += 1                                 #add 1 to cell
-
-   # pzl_print = [str(n) for n in pzl_print]      #print the puzzle
-   # print(" ")
-   # print("--Solution--")
-   # print(" ")
-   # for val in range(5):
-   #    print(" ".join(pzl_print[(val*5):((val+1)*5)])+" ") #joins the element in the list and prints them 
-
-   # print("\nchecks:", check, "backtracks:", backtrack) #displays the number of checks and backtracks 
 
 if __name__ == '__main__':
    main()
